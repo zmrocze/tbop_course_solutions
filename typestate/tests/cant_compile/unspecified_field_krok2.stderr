@@ -1,0 +1,13 @@
+error[E0599]: no method named `build` found for struct `typestate::krok2::PointBuilder<X>` in the current scope
+ --> tests/cant_compile/unspecified_field_krok2.rs:6:6
+  |
+4 |     let point  = PointBuilder::new()
+  |  ________________-
+5 | |     .x(1)
+6 | |     .build();
+  | |     -^^^^^ method not found in `PointBuilder<X>`
+  | |_____|
+  |
+  |
+  = note: the method was found for
+          - `typestate::krok2::PointBuilder<XY>`

@@ -1,0 +1,12 @@
+error[E0599]: no method named `x` found for struct `typestate::krok3::PointBuilder<i32, (), ()>` in the current scope
+ --> tests/cant_compile/field_specified_twice.rs:6:4
+  |
+4 |     let point = PointBuilder::new()
+  |  _______________-
+5 | |   .x(1)
+6 | |   .x(1)
+  | |   -^
+  | |   ||
+  | |   |private field, not a method
+  | |___|help: there is a method with a similar name: `y`
+  |

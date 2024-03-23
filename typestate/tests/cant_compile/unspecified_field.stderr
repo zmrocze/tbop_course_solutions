@@ -1,0 +1,13 @@
+error[E0599]: no method named `build` found for struct `typestate::krok3::PointBuilder<(), i32, ()>` in the current scope
+ --> tests/cant_compile/unspecified_field.rs:6:4
+  |
+4 |     let point = PointBuilder::new()
+  |  _______________-
+5 | |   .y(1)
+6 | |   .build();
+  | |   -^^^^^ method not found in `PointBuilder<(), i32, ()>`
+  | |___|
+  |
+  |
+  = note: the method was found for
+          - `typestate::krok3::PointBuilder<i32, i32, i32>`
