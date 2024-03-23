@@ -3,5 +3,6 @@
 members = [
   "misc1",
   "typestate",
-
+  "makra",
+  
 ]
